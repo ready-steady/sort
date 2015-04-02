@@ -15,7 +15,9 @@ func Quick(array []float64) ([]uint, []uint) {
 		order[i] = i
 	}
 
-	quickSort(array, order, 0, n-1)
+	if n > 1 {
+		quickSort(array, order, 0, int(n)-1)
+	}
 
 	for i := uint(0); i < n; i++ {
 		order[n+order[i]] = i
@@ -24,7 +26,7 @@ func Quick(array []float64) ([]uint, []uint) {
 	return order[:n], order[n:]
 }
 
-func quickSort(array []float64, order []uint, left, right uint) {
+func quickSort(array []float64, order []uint, left, right int) {
 	i, j := left, right
 	pivot := array[(left+right)/2]
 
