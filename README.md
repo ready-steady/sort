@@ -1,4 +1,4 @@
-# Sort [![Build Status][travis-img]][travis-url]
+# Sort [![Build Status][status-img]][status-url]
 
 The package provides sorting algorithms.
 
@@ -11,5 +11,5 @@ The package provides sorting algorithms.
 3. Create a pull request.
 
 [doc]: http://godoc.org/github.com/ready-steady/sort
-[travis-img]: https://travis-ci.org/ready-steady/sort.svg
-[travis-url]: https://travis-ci.org/ready-steady/sort
+[status-img]: https://travis-ci.org/ready-steady/sort.svg
+[status-url]: https://travis-ci.org/ready-steady/sort
