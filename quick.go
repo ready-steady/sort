@@ -4,7 +4,7 @@ package sort
 // two orderings, order1 and order2, such that order1[i] is the old position of
 // of the new data[i], and order2[i] is the new position of of the old data[i].
 //
-// http://en.wikipedia.org/wiki/Quicksort
+// https://en.wikipedia.org/wiki/Quicksort
 func Quick(data []float64) ([]uint, []uint) {
 	n := uint(len(data))
 
