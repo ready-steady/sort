@@ -5,9 +5,8 @@ import (
 	"sort"
 )
 
-// Unique sorts data in place, eliminates duplicates, and returns the number of
-// unique elements.
-func Unique(data []float64) uint {
+// Unique sorts data in place and eliminates duplicates.
+func Unique(data []float64) []float64 {
 	sort.Float64s(data)
 
 	n, k := uint(len(data)), uint(0)
@@ -18,5 +17,5 @@ func Unique(data []float64) uint {
 		}
 	}
 
-	return k + 1
+	return data[:k+1]
 }
